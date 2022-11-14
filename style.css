@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --yellow: #f1c50e;
+    --gray: #b3b3b3;
+    --red: #e5244f;
+    --white: #fff;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container1{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ############ Navbar ########### */
+
+.head{
+    border: 2px solid var(--gray);
+    padding: 15px 0;
+    margin-bottom: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.nav-left input{
+    width: 240px;
+    padding: 6px 0;
+}
+
+
+
+.fa-search{
+    position: absolute;
+    top: 21%;
+    left: 18%;
+}
+
+/* ########### Section1 ################# */
+
+.sec1{
+    margin-bottom: 90px;
+}
+
+.content-items{
+    display: flex;
+}
+
+.content-left{
+    width: 532px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.content-left h1{
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--yellow);
+}
+
+.content-left h3{
+    font-size: 40px;
+    color: var(--gray);
+}
+
+.content-left p{
+    padding: 10px 0px 0px 10px;
+    color: rgb(43, 42, 42);
+}
+
+.content-left .para1{
+    padding-bottom: 20px;
+}
+
+span{
+    color: var(--yellow);
+}
+
+.content-left .btn{
+    display: block;
+    padding: 10px 0px;
+    width: 35%;
+    font-size: 15px;
+    color: rgb(43, 42, 42);;
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.content-right{
+    background: url("./images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 75% 0;
+    width: 600px;
+    height: 590px;
+    position: relative;
+    z-index: -1;
+}
+
+.content-right img{
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 450px;
+    top: 49%;
+    left: 22%;
+    z-index: 9;
+}
+
+/* ################ Section 2 ############ */
+
+.sec2{
+    background-color: var(--yellow);
+    height: 250px;
+    position: relative;
+    z-index: -1;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9;
+    top: -8%;
+    width: 1100px;
+}
+
+.cards .card{
+    width: 260px;
+    background-color: var(--white);
+    padding: 14px 0;
+    text-align: center;
+}
+
+.card img{
+    display: block;
+    width: 64px;
+    height: 55px;
+    margin: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: var(--yellow);
+}
+
+.card h2{
+    font-size: 18px;
+    padding: 13px 0;
+    color: var(--yellow);
+}
+
+.card p{
+    font-size: 13px;
+}
+
+/* ########### About ############# */
+
+.sec4{
+    background-color: var(--gray);
+}
+
+.about{
+    text-align: center;
+    padding: 70px 0;
+}
+
+.about h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.about p{
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+.about .btn{
+    display: block;
+    padding: 12px 26px;
+    margin: auto;
+    background-color: var(--yellow);
+    border: none;
+}
+
+/* ############ Repair ######## */
+
+.sec5{
+    background: url("./images/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    height: 650px;
+    padding-top: 50px;
+}
+
+.sec5 .repair{
+    border: 2px solid var(--yellow);
+    width: 35%;
+    height: 70%;
+    color: #000;
+    background-color: var(--yellow);
+    padding: 40px 20px;
+}
+
+.repair p{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.repair h1{
+    font-size: 65px;
+    font-weight: 900;
+}
+
+.sec5 .para{
+    padding-top: 15px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* ############ Services ########## */
+
+.sec6{
+    background: url("./images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position: 20% 0;
+    height: 850px;
+}
+
+.sec6 p{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.services h1{
+    font-size: 55px;
+}
+
+.services p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sec6 .service-cards{
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+    margin-bottom: 30px;
+}
+
+.service-cards .service-card{
+    width: 340px;
+    background-color: whitesmoke;
+}
+
+.service-card img{
+    display: block;
+    width: 290px;
+    height: 270px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.service-card h1{
+    font-size: 25px;
+    padding: 10px 20px;
+    color: var(--yellow);
+}
+
+.service-card p{
+    font-size: 15px;
+    padding: 10px 20px;
+    color: var(--gray);
+}
+
+/* ########### Section 7 ########### */
+
+.sec7{
+    background-color: #000;
+    padding-bottom: 50px;
+}
+
+.service-repair{
+    text-align: center;
+    color: var(--white);
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.service-repair p{
+    font-size: 20px;
+    padding-top: 10px;
+    color: var(--gray);
+}
+
+.home-services{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.home-services .services-num{
+    width: 355px;
+    padding: 20px 10px;
+    color: var(--gray);
+    padding: 20px 0;
+}
+
+.services-num h1{
+    padding-bottom: 10px;
+    color: var(--yellow);
+}
+
+.sec7 .btn{
+    display: block;
+    margin: auto;
+    padding: 15px 45px;
+    background-color: #000;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    cursor: pointer;
+}
+
+/* ########## section 8 ######### */
+
+.sec8{
+    background-image: linear-gradient(-90deg, var(--white) 50%, var(--gray) 50%);
+    height: 625px;
+}
+
+.aboutUS{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    position: relative;
+}
+
+.aboutUS .aboutus-img{
+    background-color: var(--yellow);
+    width: 600px;
+    height: 410px;
+}
+
+.aboutus-img img{
+    display: block;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 6%;
+    left: 7%;
+}
+
+.aboutUS .aboutus-text{
+    width: 420px;
+    padding: 10px 30px;
+}
+
+.aboutus-text h1{
+    font-size: 50px;
+}
+
+.aboutus-text p{
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.aboutus-text span{
+    display: block;
+    padding: 10px 0;
+}
+
+.aboutus-text .btn{
+    display: block;
+    padding: 14px 30px;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 3px solid var(--gray);
+}
+
+
+/* ######### Section 9 ########### */
+
+.sec9{
+    background-color: #000;
+}
+
+.contact-items{
+    display: flex;
+    position: relative;
+    padding: 70px 0;
+}
+
+.contact-items .left-contact{
+    width: 350px;
+    background-color: var(--yellow);
+    padding: 40px 20px;
+    height: 500px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.left-contact h2{
+    padding: 20px 0;
+}
+
+.left-contact p{
+    padding: 20px 0s;
+}
+
+.right-contact{
+    background-color: var(--white);
+    width: 750px;
+    padding: 90px 0;
+    height: 590px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.right-contact .btn{
+    display: block;
+    padding: 12px 50px;
+    background-color: var(--white);
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.right-contact input,textarea{
+    color: black;
+    width: 60%;
+    font-size: 20px;
+    margin: 10px 0px;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 3px solid #000;
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    padding: 50px 0;
+}
+
+.pagi-items{
+    display: flex;
+}
+
+.pagi-items li{
+    list-style: none;
+    padding-left: 22px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ############ Footer ########## */
+
+.footer{
+    background-color: #333333;
+    color: var(--white);
+}
+
+.footers{
+    padding: 40px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
